@@ -137,7 +137,7 @@ void qSort(int *a, int first, int last) {
                 left++;
                 right--;
             }
-        } while (left <= right);
+        } while (left < right);
         qSort(a, first, right);
         qSort(a, left, last);
     }
